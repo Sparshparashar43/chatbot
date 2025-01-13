@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive ChatBot</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- jQuery via CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Chatbot Plugin (you can find a jQuery plugin for chat forms, such as https://www.jqueryscript.net/form/Chat-Interface-Plugin.html) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-chatbot/1.0.0/jquery.chatbot.min.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Chatbot Container -->
+    <div id="chat-container" class="flex justify-center items-center h-screen">
+        <div id="chat-box" class="w-full max-w-xl bg-white p-6 rounded-lg shadow-lg">
+            <div id="chat-output" class="mb-4 max-h-96 overflow-y-auto">
+                <div class="message bot p-2 rounded-lg bg-blue-500 text-white mb-2">
+                    Hello! I'm your chatbot. How can I help you today?
+                </div>
+            </div>
+
+            <div id="input-container" class="flex items-center space-x-2">
+                <input type="text" id="user-input" class="w-full p-2 border border-gray-300 rounded-lg" placeholder="Type a message..." />
+                <button id="send-button" class="p-2 bg-blue-500 text-white rounded-lg">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
